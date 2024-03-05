@@ -1,0 +1,84 @@
+---
+import BentoItem from './BentoItem.astro'
+---
+
+<section class={`w-full max-w-[1400px] 
+    grid grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-20
+    `}
+    >
+    <BentoItem 
+    class="col-span-10 md:col-span-10" 
+    title="Causas del suicidio"
+    >
+
+    <div
+    slot="image"
+    class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-110 transition-scale duration-1000
+        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-green-900 -z-10"
+    style="background-image: url('/bg3.webp');"
+    >
+    </div>
+     <p slot ="content" class="max-w-xl text-white">
+        Los pensamientos <strong class="text-white">suicidas</strong> pueden tener distintas causas. Con mayor frecuencia, pueden ser el resultado de sentimientos que no puedes afrontar cuando se presenta una situación abrumadora en tu vida, problemas psiquiatricos, victima de hostigamiento tanto laboral como escolar, problemas economicos o familiares
+     </p>
+    </BentoItem>
+    <BentoItem 
+    class="col-span-10 md:col-span-10" 
+    title="Etapas del suicidio">
+
+    <div
+    slot="image"
+    class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-110 transition-scale duration-1000
+        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-gray-900 -z-10"
+    style="background-image: url('/suicidio001.jpg');"
+    >
+    </div>
+
+    <h3 slot ="content" class="text-white max-w-xl">Etapa 1. <strong>Ideación</strong></h3>
+    <p slot ="content" class="text-white max-w-xl">El afectado empieza a tener pensamientos como por ejemplo.
+     "¿Como seria si yo no estuviera aqui?"</p>
+    <h3 slot="content" class="text-white max-w-xl">Etapa 2. <strong>Planeación</strong></h3>
+    <p slot="content" class="text-white max-w-xl">Involucra un cuestionamiento sobre cómo podría quitarse la vida, y que metodo podria elegir</p>
+    <h3 slot="content" class="text-white max-w-xl">Etapa 3. <strong>Actuación</strong></h3>
+    <p slot="content" class="text-white max-w-xl">La ultima etapa es el intento de suicidio, mismo que puede o no ser consumado</p>
+    </BentoItem>
+
+    <BentoItem 
+    class="col-span-10 md:col-span-6" 
+    title="Señales del suicidio" 
+    >
+    <div
+    slot="image"
+    class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-110 transition-scale duration-1000
+        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-gray-900 -z-10"
+    style="background-image: url('/signo3.jpg');"
+    >
+    </div>
+
+        <h2 slot ="content" class="text-white max-w-xl">-Aburrirse de sus actividades contidianas</h2>
+        <h2 slot ="content" class="text-white max-w-xl">-Alejarse de sus vinculos cercanos</h2>
+        <h2 slot ="content" class="text-white max-w-xl">-Despedidas constantes</h2>
+        <p slot ="content" class="text-white max-w-xl">También se pueden presentar síntomas físicos como menor energía, falta de concentración, 
+            alteraciones de sueño y del apetito que se puede ver reflejado en la variación del peso corporal durante el último mes.</p>
+
+
+    </BentoItem>
+    <BentoItem 
+    class="col-span-10 md:col-span-4" 
+    title="¿Como ayudar?" >
+    <div
+    slot="image"
+    class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-110 transition-scale duration-1000
+        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat -z-10"
+    style="background-image: url('/ayuda1.jpg');"
+    >
+    </div>
+
+    <p slot="content" class="text-white max-w-xl">Estar presente para alguien con pensamientos suicidas puede salvar vidas. Aumentar la conexión de la persona con los demás y reducir su aislamiento (tanto a corto como a largo plazo) ha demostrado ser un factor de protección contra el suicidio.</p>
+    </BentoItem>
+</section>

@@ -11,11 +11,12 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="src/estilos.css">
+    <link rel="icon" href="public/favicon.svg">
     <title>Tonalli</title>
 
 </head>
 <body>
-    <div class="w-full relative">
+    <div id="video" class="w-full relative">
         <img class="absolute top-60 z-10 w-[700px] left-0 right-0 m-auto" src="../public/logo.svg" alt="Tonalli - Plataforma web en contra del suicidio">
         <video class="w-full h-screen object-cover object-top ease-in-out animate-fade-in animate-duration-1000" src="../public/Video.mp4" autoplay loop muted
         style="clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);"></video>
@@ -45,7 +46,7 @@
     
         <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-slate-600 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl text-white hover:text-cyan-500 duration-500">Inicio</a>
+            <a href="#video" class="text-xl text-white hover:text-cyan-500 duration-500">Inicio</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
             <a href="#" class="text-xl text-white hover:text-cyan-500 duration-500">Servicios</a>
@@ -57,12 +58,12 @@
             <a href="#" class="text-xl text-white hover:text-cyan-500 duration-500">Contacto</a>
           </li>
           <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl text-white hover:text-cyan-500 duration-500">Podcast</a>
+            <a href="#prefooter" class="text-xl text-white hover:text-cyan-500 duration-500">Podcast</a>
           </li>
-    
-          <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
-            Inicia Sesión
-          </button>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="src/sesion/sesion.html" class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">Iniciar Sesion</a>
+          </li>
+         
     <h2 class=""></h2>
         </ul>
       </nav>
@@ -294,6 +295,12 @@
                 videoid="tnjVw7sEGbg"
                 videotitle="Podcast acerca de temas del suicidio"
             ></Lite-youtube>
+
+            <Lite-youtube
+            class="top-10 rounded-xl shadow-2xl shadow-white/10"
+            videoid="_ItQ8ltKB5g"
+            videotitle="Podcast alimentación en la salud mental"
+        ></Lite-youtube>
         </section>
         
         <script>
